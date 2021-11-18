@@ -1,0 +1,42 @@
+:root {
+  /* Colores */
+  --dust-color: #b6886a;
+  --bone-color: #e5dad0;
+  --cinnamon-color: #b29a89;
+  --gray-color: #504f4c;
+  --green-color: #a9b4a4;
+
+  /* Anchura máxima del contenido en desktop */
+  --max-width: 1200px;
+
+  /* Tamaños */
+  --header-height: 3rem;
+  --section-spacing: 4rem;
+  --block-spacing: 2rem;
+  --body-line-height: 1.6;
+  --title-line-height: 1.3;
+
+  /* Tamaños de fuentes */
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --big-font-size: 1rem;
+  --normal-font-size: 0.875rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.6875rem;
+
+  /* Capas */
+  --z-back: -10;
+  --z-normal: 1;
+  --z-front: 10;
+  --z-tooltip: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-fixed: 50;
+  --z-off-canvas: 100;
+
+  /* Otros */
+  --border-radius: 0.5rem;
+  --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+}
