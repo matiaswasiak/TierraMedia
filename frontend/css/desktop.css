@@ -1,3 +1,7 @@
+/* ----- ESTILOS BASE ----- */
+/* Importación de fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
 :root {
   /* Colores */
   --dust-color: #b6886a;
@@ -5,6 +9,9 @@
   --cinnamon-color: #b29a89;
   --gray-color: #504f4c;
   --green-color: #a9b4a4;
+
+  /* Fuentes */
+  --body-font: "Montserrat", sans-serif;
 
   /* Anchura máxima del contenido en desktop */
   --max-width: 1200px;
@@ -39,4 +46,56 @@
   /* Otros */
   --border-radius: 0.5rem;
   --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--header-height));
+  color: var(--gray-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: var(--body-line-height);
+  background-color: var(--body-bg-color);
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  line-height: var(--title-line-height);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+.main h1 {
+  margin-bottom: var(--block-spacing);
+  padding-top: var(--block-spacing);
+}
+
+.content-wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
