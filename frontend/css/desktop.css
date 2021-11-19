@@ -222,3 +222,28 @@ h4 {
 }
 
 /* ------------------------- PANTALLA PRINCIPAL ------------------------- */
+header {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  background-color: var(--dust-color);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--bone-color);
+  margin-bottom: 0;
+}
+
+.header-section a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--bone-color);
+}
