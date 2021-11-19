@@ -45,10 +45,6 @@
   --z-modal: 40;
   --z-fixed: 50;
   --z-off-canvas: 100;
-
-  /* Otros */
-  --border-radius: 0.5rem;
-  --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
 }
 
 * {
@@ -56,8 +52,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: calc(100vh - var(--header-height));
   color: var(--gray-color);
   font-family: var(--body-font);
@@ -130,8 +124,14 @@ h4 {
 
 /* LOGIN */
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  position: fixed;
 }
 
 .header h1 {
@@ -143,6 +143,8 @@ h4 {
 .login {
   display: flex;
   justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 
 .image-container {
@@ -152,16 +154,25 @@ h4 {
   height: 700px;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 30px 1px;
 }
 
 .login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-flow: wrap-reverse;
   padding: 5rem;
   width: 500px;
   height: 700px;
   background-color: var(--bone-color);
+  box-shadow: 0px 0px 30px 1px;
+}
+
+.login-buttons-top {
+  width: 100%;
+  text-align: end;
+  order: 1;
 }
 
 .login-input h2 {
