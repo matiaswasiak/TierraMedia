@@ -4,6 +4,9 @@
 
 :root {
   /* Colores */
+  --title-color: #121f26;
+  --text-color: #676f73;
+  --white-color: #ffffff;
   --dust-color: #b6886a;
   --bone-color: #e5dad0;
   --cinnamon-color: #b29a89;
@@ -46,6 +49,10 @@
   /* Otros */
   --border-radius: 0.5rem;
   --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -109,31 +116,88 @@ h4 {
   text-align: center;
 }
 
-.image-container {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-.image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Botones */
 .button {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border-radius: 1.5rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 10rem;
   text-decoration: none;
-  font-weight: 600;
-  color: white;
+  font-weight: 400;
+  color: var(--gray-color);
   background-color: var(--green-color);
   border: 1px solid var(--green-color);
+}
+
+/* LOGIN */
+.content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  color: var(--bone-color);
+  font-weight: 400;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  background-color: var(--dust-color);
+  width: 500px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  width: 500px;
+  height: 700px;
+  background-color: var(--bone-color);
+}
+
+.login-input h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.login-input input {
+  background-color: var(--bone-color);
+  border: 0;
+  border-bottom: 0.5px solid var(--gray-color);
+  width: 100%;
+  margin-bottom: var(--block-spacing);
+}
+
+.login-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--block-spacing);
+}
+
+.login-checkbox a {
+  color: var(--green-color);
+}
+
+.login-checkbox p {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.login-buttons-bottom .button {
+  margin-right: 20px;
+}
+
+.login-buttons-bottom .member {
+  text-decoration: none;
+  color: var(--gray-color);
 }
