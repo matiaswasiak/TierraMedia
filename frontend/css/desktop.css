@@ -370,6 +370,10 @@ header {
   height: 175px;
 }
 
+.image-content {
+  border-radius: 5px 5px 0 0;
+}
+
 .card-info {
   text-align: start;
   padding: 1.5em;
@@ -409,4 +413,10 @@ header {
   color: var(--bone-color);
   text-transform: uppercase;
   font-weight: 600;
+}
+
+/* More to explore */
+.more-section {
+  background-color: var(--cinnamon-color);
+  height: 600px;
 }
