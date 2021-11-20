@@ -237,15 +237,15 @@ header {
 }
 
 .header-section h1 {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--bone-color);
   margin-bottom: 0;
+  font-weight: 400;
+  color: var(--bone-color);
+  text-transform: uppercase;
 }
 
 .header-section a {
-  text-decoration: none;
   font-size: 1.7rem;
+  text-decoration: none;
   color: var(--bone-color);
 }
 
@@ -253,18 +253,18 @@ header {
 .menu-section {
   display: flex;
   justify-content: space-between;
-  height: var(--header-height);
   align-items: center;
-  text-transform: uppercase;
+  height: var(--header-height);
   color: var(--bone-color);
+  text-transform: uppercase;
 }
 
 .menu-section nav ul {
   display: flex;
-  list-style-type: none;
-  font-size: var(--normal-font-size);
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-size: var(--normal-font-size);
+  list-style-type: none;
 }
 
 .menu-section nav ul li:first-child {
@@ -277,19 +277,19 @@ header {
 }
 
 .buy-search a {
-  background-color: var(--gray-color);
-  color: var(--bone-color);
-  text-decoration: none;
   height: var(--header-height);
-  padding: 0 1.5em;
   display: flex;
   align-items: center;
+  padding: 0 1.5em;
   font-size: var(--normal-font-size);
+  color: var(--bone-color);
+  text-decoration: none;
+  background-color: var(--gray-color);
 }
 
 .buy-search i {
-  font-size: 1.7rem;
   margin-left: 55px;
+  font-size: 1.7rem;
 }
 
 /* Banner */
@@ -303,17 +303,17 @@ header {
 
 .blur {
   height: calc(100vh - var(--header-height) - var(--header-height));
-  background-color: rgba(20, 20, 20, 0.75);
   backdrop-filter: blur(3px);
+  background-color: rgba(20, 20, 20, 0.75);
 }
 
 .banner-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 100%;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--bone-color);
+  text-transform: uppercase;
 }
 
 .banner-container h2 {
@@ -328,23 +328,23 @@ header {
 
 /* Spotlight */
 .spotlight-section {
-  background-color: var(--bone-color);
   height: 600px;
+  background-color: var(--bone-color);
 }
 
 .spotlight-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100%;
+  align-items: center;
 }
 
 .spotlight-title h2 {
-  text-transform: uppercase;
+  margin-bottom: 2em;
   font-weight: 600;
   color: var(--title-color);
-  margin-bottom: 2em;
+  text-transform: uppercase;
 }
 
 .spotlight-content {
@@ -352,21 +352,21 @@ header {
 }
 
 .card {
-  max-width: 250px;
   height: 350px;
-  background-color: var(--white-color);
+  max-width: 250px;
   margin: 0 1.5em;
   text-align: center;
-  box-shadow: 0px 0px 5px 0.1px;
+  background-color: var(--white-color);
   border-radius: 5px;
+  box-shadow: 0px 0px 5px 0.1px;
 }
 
 .image-content {
-  background-color: var(--green-color);
+  height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 175px;
+  background-color: var(--green-color);
 }
 
 .image-content {
@@ -374,8 +374,8 @@ header {
 }
 
 .card-info {
-  text-align: start;
   padding: 1.5em;
+  text-align: start;
 }
 
 .card-info h3 {
@@ -396,55 +396,55 @@ header {
 
 .blur-attraction {
   height: 400px;
-  background-color: rgba(20, 20, 20, 0.75);
   backdrop-filter: blur(3px);
+  background-color: rgba(20, 20, 20, 0.75);
 }
 
 .attraction-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .attraction-container h2 {
-  color: var(--bone-color);
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bone-color);
 }
 
 /* More to explore */
 .more-section {
-  background-color: var(--cinnamon-color);
   height: 600px;
+  background-color: var(--cinnamon-color);
 }
 
 /* Footer */
 .footer-section {
-  background-color: var(--gray-color);
   height: 120px;
+  background-color: var(--gray-color);
 }
 
 .footer-container {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   color: var(--bone-color);
 }
 
 .footer-title h2 {
   margin: 0;
-  text-transform: uppercase;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .footer-nav ul {
   display: flex;
-  list-style-type: none;
   font-size: var(--normal-font-size);
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .footer-nav ul li {
