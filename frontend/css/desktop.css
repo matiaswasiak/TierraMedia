@@ -222,6 +222,7 @@ h4 {
 }
 
 /* ------------------------- PANTALLA PRINCIPAL ------------------------- */
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -244,6 +245,84 @@ header {
 
 .header-section a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--bone-color);
+}
+
+/* Menu */
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--bone-color);
+}
+
+.menu-section nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: var(--h3-font-size);
+  padding: 0;
+  margin: 0;
+}
+
+.menu-section nav ul li:first-child {
+  margin-right: 35px;
+}
+
+.buy-search {
+  display: flex;
+  align-items: center;
+}
+
+.buy-search a {
+  background-color: var(--gray-color);
+  color: var(--bone-color);
+  text-decoration: none;
+  height: var(--header-height);
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  font-size: var(--h3-font-size);
+}
+
+.buy-search i {
+  font-size: 1.7rem;
+  margin-left: 55px;
+}
+
+/* Banner */
+.banner-section {
+  height: calc(100vh - var(--header-height) - var(--header-height));
+  background-color: #121f26;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.blur {
+  height: calc(100vh - var(--header-height) - var(--header-height));
+  background-color: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(3px);
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  text-transform: uppercase;
+  color: var(--bone-color);
+}
+
+.banner-container h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.banner-container span {
+  font-size: var(--h1-font-size);
+  cursor: pointer;
 }
