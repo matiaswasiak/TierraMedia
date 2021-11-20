@@ -262,7 +262,7 @@ header {
 .menu-section nav ul {
   display: flex;
   list-style-type: none;
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
   padding: 0;
   margin: 0;
 }
@@ -284,7 +284,7 @@ header {
   padding: 0 1.5em;
   display: flex;
   align-items: center;
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .buy-search i {
@@ -299,7 +299,6 @@ header {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
 }
 
 .blur {
@@ -419,4 +418,39 @@ header {
 .more-section {
   background-color: var(--cinnamon-color);
   height: 600px;
+}
+
+/* Footer */
+.footer-section {
+  background-color: var(--gray-color);
+  height: 120px;
+}
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--bone-color);
+}
+
+.footer-title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+}
+
+.footer-nav ul li {
+  margin-left: 1.5em;
+}
+
+.footer-nav ul li:first-child {
+  margin-left: 0;
 }
