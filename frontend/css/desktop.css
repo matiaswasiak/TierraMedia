@@ -380,3 +380,33 @@ header {
   text-transform: uppercase;
   color: var(--title-color);
 }
+
+/* Attraction */
+.attraction-section {
+  height: 400px;
+  background-color: #121f26;
+  background-image: url(../img/attraction.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.blur-attraction {
+  height: 400px;
+  background-color: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(3px);
+}
+
+.attraction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.attraction-container h2 {
+  color: var(--bone-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
