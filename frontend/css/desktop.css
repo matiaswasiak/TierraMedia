@@ -415,7 +415,7 @@ header {
 }
 
 /* More to explore */
-.more-section {
+.spotlight-alt {
   height: 600px;
   background-color: var(--cinnamon-color);
 }
@@ -453,4 +453,25 @@ header {
 
 .footer-nav ul li:first-child {
   margin-left: 0;
+}
+
+/* ------------------------- ATRACCIONES ------------------------- */
+/* More to explore */
+.more-section {
+  height: auto;
+  background-color: var(--bone-color);
+  padding: 6em 0;
+}
+.card-container {
+  display: grid;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(250px, auto);
+  gap: 40px;
+  grid-auto-flow: row;
+}
+
+.card-attraction {
+  margin: 0;
 }
