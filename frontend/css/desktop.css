@@ -257,6 +257,7 @@ header {
   height: var(--header-height);
   color: var(--bone-color);
   text-transform: uppercase;
+  border-bottom: 1px solid var(--dust-color);
 }
 
 .menu-section nav ul {
@@ -474,4 +475,38 @@ header {
 
 .card-attraction {
   margin: 0;
+}
+
+/* ------------------------- PRODUCTO ------------------------- */
+.product-section {
+  height: calc(100vh - var(--header-height) - var(--header-height));
+  display: flex;
+  align-items: center;
+}
+
+.product-container {
+  background-color: var(--bone-color);
+  min-height: 600px;
+  padding: 5em 9em;
+}
+
+.product-content {
+  display: flex;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image img {
+  height: 100%;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.product-info h1 {
+  text-transform: uppercase;
+  font-weight: 600;
 }
