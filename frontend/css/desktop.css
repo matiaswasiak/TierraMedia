@@ -39,6 +39,7 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -183,6 +184,17 @@ h4 {
   border-radius: 0 5rem 5rem 0;
 }
 
+.button-left:hover {
+  background-color: #c5cfbf;
+  transition-duration: 0.3s;
+}
+
+.button-right:hover {
+  background-color: #c5cfbf;
+  color: var(--white-color);
+  transition-duration: 0.3s;
+}
+
 .login-input h2 {
   font-weight: 400;
   color: var(--title-color);
@@ -191,6 +203,7 @@ h4 {
 
 .login-input input {
   width: 100%;
+  height: 50px;
   padding-top: 1rem;
   margin-bottom: var(--block-spacing);
   background-color: var(--bone-color);
@@ -198,8 +211,17 @@ h4 {
   border-bottom: 0.5px solid var(--gray-color);
 }
 
+.login-input input:focus-visible {
+  border: 0;
+  border-bottom: 0.5px solid var(--gray-color);
+  outline: 0;
+  opacity: 0.8;
+  transition-duration: 0.3s;
+}
+
 .login-checkbox {
   display: flex;
+  align-items: center;
   margin-bottom: var(--block-spacing);
 }
 
@@ -216,9 +238,19 @@ h4 {
   margin-right: 20px;
 }
 
+.login-buttons-bottom .button:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0 0 3px 0.1px;
+}
+
 .login-buttons-bottom .member {
   text-decoration: none;
   color: var(--gray-color);
+}
+
+.login-buttons-bottom .member:hover {
+  border-bottom: 1px solid var(--green-color);
+  transition-duration: 0.1s;
 }
 
 /* ------------------------- PANTALLA PRINCIPAL ------------------------- */
@@ -564,4 +596,21 @@ header {
   height: 40px;
   font-size: 1.2rem;
   border-radius: 50%;
+}
+
+/* ------------------------- LISTADO ------------------------- */
+.list-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: var(--normal-font-size);
+}
+
+.list-nav ul li {
+  padding: 0 17.5px;
+}
+
+.list-nav ul li a {
+  color: var(--bone-color);
 }
