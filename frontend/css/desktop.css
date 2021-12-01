@@ -304,12 +304,20 @@ header {
   margin-right: 35px;
 }
 
+.menu-section nav ul li a {
+  color: var(--bone-color);
+}
+
 .buy-search {
   display: flex;
   align-items: center;
 }
 
 .buy-search a {
+  color: var(--bone-color);
+}
+
+.buy-search a:first-child {
   height: var(--header-height);
   display: flex;
   align-items: center;
