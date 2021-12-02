@@ -247,3 +247,205 @@ h4 {
   border-bottom: 1px solid var(--green-color);
   transition-duration: 0.1s;
 }
+
+/* ------------------------- PANTALLA PRINCIPAL ------------------------- */
+/* Header */
+header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  width: 100%;
+  background-color: var(--dust-color);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section h1 {
+  margin-bottom: 0;
+  font-size: var(--big-font-size);
+  font-weight: 400;
+  color: var(--bone-color);
+  text-transform: uppercase;
+}
+
+.header-section a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--bone-color);
+}
+
+/* Menu */
+.menu-section {
+  display: none;
+}
+
+/* Banner */
+.banner-section {
+  height: 100vh;
+  padding-top: var(--header-height);
+  background-color: #121f26;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blur {
+  height: 100%;
+  padding-top: var(--header-height);
+  backdrop-filter: blur(3px);
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+.banner-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--bone-color);
+  text-transform: uppercase;
+}
+
+.banner-container h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.banner-container span {
+  font-size: var(--h1-font-size);
+  cursor: pointer;
+}
+
+/* Spotlight */
+.spotlight-section {
+  height: auto;
+  padding-top: 3em;
+  background-color: var(--bone-color);
+}
+
+.spotlight-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlight-title h2 {
+  margin-bottom: 2em;
+  font-weight: 600;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+.card {
+  height: 350px;
+  max-width: 250px;
+  margin: 0 1.5em;
+  margin-bottom: 3em;
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0.1px;
+}
+
+.image-content {
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-color);
+}
+
+.image-content {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-info {
+  padding: 1.5em;
+  text-align: start;
+}
+
+.card-info h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+/* Attraction */
+.attraction-section {
+  height: 400px;
+  background-color: #121f26;
+  background-image: url(../img/attraction.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blur-attraction {
+  height: 400px;
+  backdrop-filter: blur(3px);
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+.attraction-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attraction-container h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bone-color);
+}
+
+/* More to explore */
+.spotlight-alt {
+  height: auto;
+  background-color: var(--cinnamon-color);
+}
+
+/* Footer */
+.footer-section {
+  height: auto;
+  background-color: var(--gray-color);
+}
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  color: var(--bone-color);
+}
+
+.footer-title h2 {
+  margin: 0;
+  font-size: var(--big-font-size);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.footer-nav ul li {
+  margin-bottom: 1em;
+  font-size: var(--smaller-font-size);
+}
