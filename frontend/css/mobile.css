@@ -1,0 +1,240 @@
+/* ----- ESTILOS BASE ----- */
+/* Importación de fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+:root {
+  /* Colores */
+  --title-color: #121f26;
+  --text-color: #676f73;
+  --white-color: #ffffff;
+  --dust-color: #b6886a;
+  --bone-color: #e5dad0;
+  --cinnamon-color: #b29a89;
+  --gray-color: #504f4c;
+  --green-color: #a9b4a4;
+
+  /* Fuentes */
+  --body-font: "Montserrat", sans-serif;
+
+  /* Anchura máxima del contenido en desktop */
+  --max-width: 1200px;
+
+  /* Tamaños */
+  --header-height: 3rem;
+  --section-spacing: 4rem;
+  --block-spacing: 2rem;
+  --body-line-height: 1.6;
+  --title-line-height: 1.3;
+
+  /* Tamaños de fuentes */
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --big-font-size: 1rem;
+  --normal-font-size: 0.875rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.6875rem;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: calc(100vh - var(--header-height));
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: var(--body-line-height);
+  color: var(--gray-color);
+  background-color: var(--cinnamon-color);
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  line-height: var(--title-line-height);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+.main h1 {
+  margin-bottom: var(--block-spacing);
+  padding-top: var(--block-spacing);
+}
+
+.content-wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.section-container {
+  margin-bottom: var(--section-spacing);
+}
+
+.section-container h1,
+.section-container h2 {
+  text-align: center;
+}
+
+/* Botones */
+.button {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  text-decoration: none;
+  color: var(--gray-color);
+  background-color: var(--green-color);
+  border: 1px solid var(--green-color);
+  border-radius: 10rem;
+}
+
+/* ------------------------------ LOGIN ------------------------------ */
+.content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--bone-color);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: none;
+}
+
+.login-container {
+  display: flex;
+  flex-flow: wrap-reverse;
+  padding: 4em;
+  height: 450px;
+  background-color: var(--bone-color);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 1px;
+}
+
+.login-buttons-top {
+  width: 100%;
+  text-align: center;
+  order: 1;
+}
+
+.button-left {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: var(--small-font-size);
+  color: var(--gray-color);
+  text-decoration: none;
+  border: 1px solid var(--green-color);
+  border-radius: 5rem 0 0 5rem;
+}
+
+.button-right {
+  display: inline-block;
+  margin-left: -4px;
+  padding: 0.5rem 1rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  text-decoration: none;
+  background-color: var(--green-color);
+  border: 1px solid var(--green-color);
+  border-radius: 0 5rem 5rem 0;
+}
+
+.button-left:hover {
+  background-color: #c5cfbf;
+  transition-duration: 0.3s;
+}
+
+.button-right:hover {
+  background-color: #c5cfbf;
+  color: var(--white-color);
+  transition-duration: 0.3s;
+}
+
+.login-input h2 {
+  text-align: center;
+  font-weight: 400;
+  color: var(--title-color);
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+
+.login-input input {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 4em;
+  background-color: var(--bone-color);
+  border: 0;
+  border-bottom: 0.5px solid var(--gray-color);
+}
+
+.login-input input:focus-visible {
+  border: 0;
+  border-bottom: 0.5px solid var(--gray-color);
+  outline: 0;
+  opacity: 0.8;
+  transition-duration: 0.3s;
+}
+
+.login-checkbox {
+  display: none;
+}
+
+.login-buttons-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-buttons-bottom .button {
+  margin-bottom: 1em;
+}
+
+.login-buttons-bottom .button:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0 0 3px 0.1px;
+}
+
+.login-buttons-bottom .member {
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.login-buttons-bottom .member:hover {
+  border-bottom: 1px solid var(--green-color);
+  transition-duration: 0.1s;
+}
