@@ -1,3 +1,25 @@
-body {
-  background-color: yellow;
+/* ------------------------------ LOGIN ------------------------------ */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 550px;
+  background-color: var(--dust-color);
+  box-shadow: 0px 0px 30px 1px;
+}
+
+.login-container {
+  justify-content: center;
+  padding: 4rem;
+  width: 500px;
+  height: 550px;
+}
+
+.login-input h2 {
+  padding-top: 0;
+}
+
+.login-input input {
+  padding-top: 1rem;
 }
