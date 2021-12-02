@@ -89,13 +89,9 @@
   padding: 6em 0;
   background-color: var(--bone-color);
 }
+
 .card-container {
-  height: auto;
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(250px, auto);
-  gap: 40px;
-  grid-auto-flow: row;
 }
 
 .card-attraction {
