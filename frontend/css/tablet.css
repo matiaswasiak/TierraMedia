@@ -154,3 +154,39 @@ header {
 .card-container {
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* ------------------------- PRODUCTO ------------------------- */
+.product-section {
+  padding: 0;
+}
+.product-content {
+  height: calc(100vh - var(--header-height) - var(--header-height));
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-image {
+  height: 500px;
+}
+.product-image img {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+
+.product-box {
+  height: 500px;
+}
+
+.product-title h2 {
+  height: auto;
+  padding: 0;
+  padding-top: 1em;
+}
+.product-title p {
+  margin: 0;
+}
+
+.product-buttons {
+  padding-top: 1em;
+}
