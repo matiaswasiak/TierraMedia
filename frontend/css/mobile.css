@@ -480,8 +480,8 @@ header {
 
 .product-container {
   display: flex;
-  padding: 2em 1em;
   justify-content: center;
+  padding: 2em 1em;
 }
 
 .product-image img {
@@ -494,9 +494,9 @@ header {
 }
 
 .product-description h1 {
-  text-transform: uppercase;
-  font-weight: 600;
   padding-top: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .product-description p {
@@ -519,27 +519,27 @@ header {
 .product-buttons a {
   text-decoration: none;
   text-transform: uppercase;
-  background-color: var(--green-color);
   color: var(--gray-color);
+  background-color: var(--green-color);
 }
 
 .button-1 {
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  margin-bottom: 0.5em;
   padding: 0 1.5em;
   font-size: var(--h4-font-size);
   border-radius: 50px;
-  margin-bottom: 0.5em;
 }
 
 .button-2 {
+  height: 40px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 40px;
   font-size: 1.2rem;
   border-radius: 50px;
 }
