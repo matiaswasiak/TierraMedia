@@ -99,6 +99,9 @@
 }
 
 /* ------------------------- PRODUCTO ------------------------- */
+.product-section {
+  min-height: 700px;
+}
 .product-content {
   width: 1000px;
   height: 600px;
