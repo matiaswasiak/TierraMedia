@@ -1,4 +1,7 @@
 /* ------------------------------ LOGIN ------------------------------ */
+.login {
+  min-height: 550px;
+}
 .image-container {
   display: flex;
   justify-content: center;
