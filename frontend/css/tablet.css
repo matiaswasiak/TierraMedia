@@ -100,6 +100,10 @@
 }
 
 /* ------------------------- ATRACCIONES ------------------------- */
+.attraction-page {
+  padding-top: 0;
+}
+
 /* More to explore */
 .more-section {
   height: auto;

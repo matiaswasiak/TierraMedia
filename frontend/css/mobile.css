@@ -726,6 +726,10 @@ nav .content .links {
 }
 
 /* ------------------------- ATRACCIONES ------------------------- */
+.attraction-page {
+  height: auto;
+  padding-top: 120px;
+}
 /* More to explore */
 .more-section {
   height: auto;
