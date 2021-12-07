@@ -144,6 +144,10 @@
   width: 50%;
 }
 
+.product-buy h2 {
+  margin-bottom: 1em;
+}
+
 .product-box {
   width: 50%;
   height: 100%;

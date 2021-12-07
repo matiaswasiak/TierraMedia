@@ -752,7 +752,7 @@ nav .content .links {
 /* ------------------------- PRODUCTO ------------------------- */
 .product-section {
   height: auto;
-  padding-top: var(--header-height);
+  padding-top: 120px;
   text-align: center;
   background-color: var(--bone-color);
 }
