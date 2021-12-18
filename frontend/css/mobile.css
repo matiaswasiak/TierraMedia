@@ -567,10 +567,9 @@ nav .content .links {
   justify-content: center;
   align-items: center;
   align-content: stretch;
-  min-height: 100vh;
   width: 100%;
-  /* max-width: 900px; */
   margin: 0 auto;
+  max-height: calc(100vh - 120px);
 }
 
 .c-header {
@@ -712,6 +711,7 @@ a {
 
 /* Spotlight */
 .spotlight-section {
+  position: relative;
   height: auto;
   padding-top: 3em;
   background-color: var(--bone-color);
